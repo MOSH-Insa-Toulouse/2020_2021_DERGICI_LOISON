@@ -1,0 +1,82 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# BT_module-HC05-librairie_projet_capteur
+#
+DEF BT_module-HC05-librairie_projet_capteur U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "BT_module-HC05-librairie_projet_capteur" 0 90 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -350 -95 410 -450 0 1 0 N
+X Vcc 1 -425 -150 100 R 50 50 1 1 W
+X GND 2 -425 -200 100 R 50 50 1 1 W
+X TxD 3 -430 -300 100 R 50 50 1 1 I
+X RxD 4 -430 -400 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# FlexSensor-librairie_projet_capteur
+#
+DEF FlexSensor-librairie_projet_capteur U 0 40 Y Y 1 F N
+F0 "U" -200 150 50 H V C CNN
+F1 "FlexSensor-librairie_projet_capteur" 0 -150 50 H V C CNN
+F2 "footprint_FlexSensor:FlexSensor" 85 -225 50 H V C CNN
+F3 "" 0 100 50 H I C CNN
+DRAW
+S -300 100 300 -100 0 1 0 f
+P 2 0 1 0 -300 -50 -50 -50 N
+P 2 0 1 0 -300 50 -50 50 N
+P 2 0 1 0 -50 -50 -45 -50 N
+P 2 0 1 0 25 70 25 -5 N
+P 2 0 1 0 60 -65 60 5 N
+P 2 0 1 0 120 70 120 -5 N
+P 2 0 1 0 180 70 180 -5 N
+P 2 0 1 0 215 -65 215 5 N
+P 3 0 1 0 -50 50 -50 70 240 70 N
+P 3 0 1 0 -5 -65 -5 5 -5 0 N
+P 3 0 1 0 150 -65 150 5 150 0 N
+P 4 0 1 0 -45 -50 -45 -65 250 -65 240 -65 N
+X ~ 1 -400 50 100 R 50 50 1 1 P
+X ~ 2 -400 -50 100 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# LTC1050-librairie_projet_capteur
+#
+DEF LTC1050-librairie_projet_capteur U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "LTC1050-librairie_projet_capteur" 0 90 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -350 -55 585 -545 0 1 0 N
+X NC_1 1 -375 -130 100 R 50 50 1 1 N
+X -IN 2 -410 -250 100 R 50 50 1 1 I
+X +IN 3 -405 -350 100 R 50 50 1 1 I
+X V- 4 -400 -450 100 R 50 50 1 1 W
+X CLK 5 615 -500 100 L 50 50 1 1 I
+X OUT 6 620 -350 100 L 50 50 1 1 O
+X V+ 7 620 -250 100 L 50 50 1 1 W
+X NC_8 8 600 -130 100 L 50 50 1 1 N
+ENDDRAW
+ENDDEF
+#
+# OLED-librairie_projet_capteur
+#
+DEF OLED-librairie_projet_capteur U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "OLED-librairie_projet_capteur" 0 80 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -400 -50 500 -560 0 1 0 N
+X GND 1 -470 -500 100 R 50 50 1 1 W
+X Vcc_5+ 2 -470 -350 100 R 50 50 1 1 W
+X SCL 3 -470 -200 100 R 50 50 1 1 I
+X SDA 4 -470 -100 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library

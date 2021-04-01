@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name capteur_shield_lib)(type Legacy)(uri ${KIPRJMOD}/capteur_shield_lib.lib)(options "")(descr ""))
+  (lib (name librairie_projet_capteur)(type Legacy)(uri ${KIPRJMOD}/librairie_projet_capteur.lib)(options "")(descr ""))
+  (lib (name capteur_shield-rescue)(type Legacy)(uri ${KIPRJMOD}/capteur_shield-rescue.lib)(options "")(descr ""))
+)
