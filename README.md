@@ -4,7 +4,7 @@
 
 - [x] KiCAD PCB shield: transimpedance amplifier, BT module, OLED screen
 - [x] Code Arduino: mesure jauge contrainte & contrôle communication BT/affichage sur l'OLED
-- [] APK Android interface sur MIT App Inventor: évolution de la valeur de la résistance
+- [x] APK Android interface sur MIT App Inventor: évolution de la valeur de la résistance
 - [] Datasheet du capteur jauge contrainte
 - [] Protocole du banc test
 
@@ -14,7 +14,7 @@
 
 
 ## Livrale 2 - Code Arduino
-- le code Arduino permet la communication avec le téléphone portable (réception et envoi de données sous forme de bit)
+- le code Arduino permet la communication avec le téléphone portable (réception et envoi de données sous forme de bit), sur la base d'une machine à états il gère ensuite les différents cas de figure possibles
 - il transforme la valeur en ADC en valeur de résistance, selon l'équation du circuit établie
 - il gère aussi l'affichage des valeurs de résistance sur l'OLED pendant la mesure, et gère l'arrêt de mesure avec l'affichage de l'écran d'accueil sur l'OLED
 
