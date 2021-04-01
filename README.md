@@ -6,7 +6,7 @@
 - [x] Code Arduino: mesure jauge contrainte & contrôle communication BT/affichage sur l'OLED
 - [] APK Android interface sur MIT App Inventor: évolution de la valeur de la résistance
 - [] Datasheet du capteur jauge contrainte
-- [] Protocole banc test
+- [] Protocole du banc test
 
 
 ## Livrable 1 - KiCAD PCB shield
