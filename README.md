@@ -1,7 +1,8 @@
 # 2020_2021_DERGICI_LOISON
 
 ## Description 
-
+Projet Capteur 2020/2021: design et fabrication d'un PCB shield comprenant une jauge de contrainte à base de graphite, couplée à un circuit analogique qui communique, via un microcontrôleur, avec une application Android 
+ 
 ## Projet Capteur - liste des livrables
 
 - [x] KiCAD PCB shield: transimpedance amplifier, BT module, OLED screen
