@@ -1,7 +1,7 @@
 # 2020_2021_DERGICI_LOISON
 
 ## Description 
-Projet Capteur 2020/2021: design et fabrication d'un PCB shield comprenant une jauge de contrainte à base de graphite, couplée à un circuit analogique qui communique, via un microcontrôleur, avec une application Android 
+Ce projet s'inscrit dans l'enseignement de 4éme année génie physique de l'UF "du Banc de Test au Capteur". Il comprend le design et la fabrication d'un PCB shield comprenant une jauge de contrainte à base de graphite, couplée à un circuit analogique qui communique, via un microcontrôleur, avec une application Android. 
  
 ## Projet Capteur - liste des livrables
 
@@ -9,7 +9,7 @@ Projet Capteur 2020/2021: design et fabrication d'un PCB shield comprenant une j
 - [x] Code Arduino: mesure jauge contrainte & contrôle communication BT/affichage sur l'OLED
 - [x] APK Android interface sur MIT App Inventor: évolution de la valeur de la résistance
 - [] Datasheet du capteur jauge contrainte
-- [] Protocole du banc test
+- [x] Protocole du banc test
 
 
 ## Livrable 1 - KiCAD PCB shield
@@ -32,6 +32,8 @@ Projet Capteur 2020/2021: design et fabrication d'un PCB shield comprenant une j
 - L'arrêt de la mesure est annoncé par l'application (déclenche un message vocal)
 # Lien de téléchargement de l'application
 # Interface de Capteur_Graphite_SDML
+![Application-Capteur_Graphite_SDML](https://user-images.githubusercontent.com/78032298/113753609-8fa19600-970e-11eb-80ae-45160a3eb633.jpg)
+
 
 ## Livrable 4 - Datacheet du capteur jauge contrainte 
 
