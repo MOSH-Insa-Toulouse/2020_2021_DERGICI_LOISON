@@ -36,6 +36,9 @@ Projet Capteur 2020/2021: design et fabrication d'un PCB shield comprenant une j
 ## Livrable 4 - Datacheet du capteur jauge contrainte 
 
 ## Livrable 5 - Protocole du banc de test
+On utilise un banc de test demi-circulaire des portions de différents rayons. Les rayons sont compris entre 1 cm et 2.5 cm avec un intervalle de 0.25cm. Chaque rayon correspond à un rayon de courbure que l'on calcul et engendre une déformation sur le capteur graphite. Le capteur peut être placé de sorte a ce que la déformation soit effectuée de l'intérieur ou de l'extérieur. Une petite fente présente a chaque début de courbure permet de coincer l'extrémité du capteur ne possédant pas les pinces crocodiles, ce qui permet d'avoir une mesure fixe par rapport au bon rayon de courbure. Le capteur doit bien épouser la surface du banc de test afin d'avoir la valeur de la résistance souhaitée.
+À chaque test, les données (la clock, la valeur de la résistance et la valeur de l'ADC) sont enregistrées dans un fichier texte sur le téléphone nommé de ce type "myFile_typeCrayon_rayon.txt".
+Une fois tous les tests effectués selon les différents rayons de courbure et selon le type de crayon choisi, les données sont traitées.
 
 ## Pistes d'améliorations possibles
 - Le banc de test peut être améliorer. Le capteur se détériore rapidement ce qui parfois ne permet pas de faire les tests suivant toutes les différentes coubures et ainsi engendre des erreurs. Afin d'avoir des résultats de tests analysables il faut utiliser ce même capteur pour les différentes courbures et sans rajouter de graphite. Néanmoins avec les frottements la piste de graphite et la pince crocodile, il y a une perte de graphite. Un banc de test avec la partie supérieur du capteur (artie de contact avec les pinces crocodiles) immobile serait plus judicieux.
