@@ -32,7 +32,6 @@ Ce projet s'inscrit dans l'enseignement de 4éme année génie physique de l'UF 
 - L'arrêt de la mesure est annoncé par l'application (déclenche un message vocal)
 # Lien de téléchargement de l'application
 # Interface de Capteur_Graphite_SDML
-![Application-Capteur_Graphite_SDML](https://user-images.githubusercontent.com/78032298/113753609-8fa19600-970e-11eb-80ae-45160a3eb633.jpg)
 
 
 ## Livrable 4 - Datacheet du capteur jauge contrainte 
