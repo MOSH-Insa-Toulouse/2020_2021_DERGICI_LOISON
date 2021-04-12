@@ -46,16 +46,16 @@ Le projet comprend:
 
 ## 3.1 Présentation des symboles KiCAD créés
 
-- Symbole créé pour le capteur graphite
+### Symbole créé pour le capteur graphite
 ![Symbole du capteur sous KiCAD](Images/Symbole_Capteur_KiCAD.png)
 
-- Symbole créé pour l'écran OLED
+### Symbole créé pour l'écran OLED
 
 
-- Symbole créé pour le module BlueTooth
+### Symbole créé pour le module BlueTooth
 
 
-- Symbole créé pour l'appli LTC1050
+### Symbole créé pour l'appli LTC1050
 
 
 
