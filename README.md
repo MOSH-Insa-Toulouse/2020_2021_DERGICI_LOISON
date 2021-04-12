@@ -1,47 +1,50 @@
 # 2020_2021_DERGICI_LOISON
 
-## Description 
-Ce projet s'inscrit dans l'enseignement de 4éme année génie physique de l'UF "du Banc de Test au Capteur". Il comprend le design et la fabrication d'un PCB shield comprenant une jauge de contrainte à base de graphite, couplée à un circuit analogique qui communique, via un microcontrôleur, avec une application Android. 
+## Plan du Projet Capteur
+<!-- TOC depthFrom:2 -->autoauto- [Plan du Projet Capteur](#plan-du-projet-capteur)auto- [1. Description](#1-description)auto- [2. Liste des livrables](#2-liste-des-livrables)auto- [3. KiCAD PCB shield - Livrable 1](#3-kicad-pcb-shield---livrable-1)auto- [4. Code Arduino - Livrable 2](#4-code-arduino---livrable-2)auto- [5. APK Android interface - Livrable 3](#5-apk-android-interface---livrable-3)auto    - [5.1 Notre application: Capteur_Graphite_SDML](#51-notre-application-capteur_graphite_sdml)auto    - [5.2 Interface de Capteur_Graphite_SDML](#52-interface-de-capteur_graphite_sdml)auto- [6. Datacheet du capteur - Livrable 4](#6-datacheet-du-capteur---livrable-4)auto- [7. Protocole du banc de test - Livrable 5](#7-protocole-du-banc-de-test---livrable-5)auto- [8. Pistes des améliorations possibles](#8-pistes-des-améliorations-possibles)autoauto<!-- /TOC -->
+
+## 1. Description 
+Ce projet s'inscrit dans l'enseignement de 4éme année génie physique de l'UF "du Banc de Test au Capteur". Le capteur à réaliser est comparable à une jauge de contrainte à base de graphite. Le projet comprend le design et la fabrication d'un PCB shield, le couplage de la jauge à un circuit analogique, la communication via un microcontrôleur avec une application Android. 
  
-## Projet Capteur - liste des livrables
+## 2. Liste des livrables
 
 - [x] KiCAD PCB shield: transimpedance amplifier, BT module, OLED screen
 - [x] Code Arduino: mesure jauge contrainte & contrôle communication BT/affichage sur l'OLED
 - [x] APK Android interface sur MIT App Inventor: évolution de la valeur de la résistance
-- [] Datasheet du capteur jauge contrainte
+- [x] Datasheet du capteur
 - [x] Protocole du banc test
 
 
-## Livrable 1 - KiCAD PCB shield
+## 3. KiCAD PCB shield - Livrable 1
 - le PCB simple face 
 
 
-## Livrale 2 - Code Arduino
+## 4. Code Arduino - Livrable 2
 - le code Arduino permet la communication avec le téléphone portable (réception et envoi de données sous forme de bit), sur la base d'une machine à états il gère ensuite les différents cas de figure possibles
 - il transforme la valeur en ADC en valeur de résistance, selon l'équation du circuit établie
 - il gère aussi l'affichage des valeurs de résistance sur l'OLED pendant la mesure, et gère l'arrêt de mesure avec l'affichage de l'écran d'accueil sur l'OLED
 
 
-## Livrable 3 - APK Android interface
-# Notre application: Capteur_Graphite_SDML
+## 5. APK Android interface - Livrable 3
+
+### 5.1 Notre application: Capteur_Graphite_SDML
 - L'application nommée "Capteur_Graphite_SDML" se connecte par bluetooth au capteur 
 - L'état de la connexion s'affiche ainsi que le nom de l'appareil connecté
 - Mesure la valeur de la résistance selon la déformation appliquée sur le capteur et l'affiche
 - Trace le graphique en temps réel des valeurs d'ADC mesurées (choix de l'ADC et non de la résistance pour le graph. car l'ADC varie moins fortement que la résistance)
 - Les données sont sauvegardées sous le nom entré par l'utilisateur et accessibles depuis le téléphone 
 - L'arrêt de la mesure est annoncé par l'application (déclenche un message vocal)
-# Lien de téléchargement de l'application
-# Interface de Capteur_Graphite_SDML
+
+### 5.2 Interface de Capteur_Graphite_SDML
 
 
-## Livrable 4 - Datacheet du capteur jauge contrainte 
+## 6. Datacheet du capteur - Livrable 4
 
-## Livrable 5 - Protocole du banc de test
-On utilise un banc de test demi-circulaire des portions de différents rayons. Les rayons sont compris entre 1 cm et 2.5 cm avec un intervalle de 0.25cm. Chaque rayon correspond à un rayon de courbure que l'on calcul et engendre une déformation sur le capteur graphite. Le capteur peut être placé de sorte a ce que la déformation soit effectuée de l'intérieur ou de l'extérieur. Une petite fente présente a chaque début de courbure permet de coincer l'extrémité du capteur ne possédant pas les pinces crocodiles, ce qui permet d'avoir une mesure fixe par rapport au bon rayon de courbure. Le capteur doit bien épouser la surface du banc de test afin d'avoir la valeur de la résistance souhaitée.
-À chaque test, les données (la clock, la valeur de la résistance et la valeur de l'ADC) sont enregistrées dans un fichier texte sur le téléphone nommé de ce type "myFile_typeCrayon_rayon.txt".
-Une fois tous les tests effectués selon les différents rayons de courbure et selon le type de crayon choisi, les données sont traitées.
+## 7. Protocole du banc de test - Livrable 5
+On utilise un banc de test demi-circulaire des portions de différents rayons. Les rayons sont compris entre 1 cm et 2.5 cm avec un intervalle de 0.25cm. Chaque rayon est associé à une déformation max applicable au capteur graphite. La déformation peut être "interne" ou "externe" en fonction du positionnement du capteur. Une petite fente présente a chaque début de courbure permet de coincer l'extrémité du capteur, ce qui permet de bien épouser la surface du banc de test. Pour une meilleure durée de vie du capteur il est préférable de commencer par les rayons les plus grands (torsion et risque de casse du capteur moins)
+À chaque test, les données (la clock, la valeur de la résistance et la valeur de l'ADC) sont enregistrées dans un fichier texte sur le téléphone (nom typique: "myFile_typeCrayon_rayon.txt").
+Une fois tous les tests effectués selon les différents rayons et selon le type de crayon choisi, les données sont traitées.
 
-## Pistes d'améliorations possibles
-- Le banc de test peut être améliorer. Le capteur se détériore rapidement ce qui parfois ne permet pas de faire les tests suivant toutes les différentes coubures et ainsi engendre des erreurs. Afin d'avoir des résultats de tests analysables il faut utiliser ce même capteur pour les différentes courbures et sans rajouter de graphite. Néanmoins avec les frottements la piste de graphite et la pince crocodile, il y a une perte de graphite. Un banc de test avec la partie supérieur du capteur (artie de contact avec les pinces crocodiles) immobile serait plus judicieux.
-On observe une faible reproductibilité des expériences, chaque capteur est unique même en utilisant le même type de crayon. En effet, tout dépend de la quantité de graphite que l'on dépose sur le capteur. Il est rare de retrouver les même valeurs de résistance pour un même crayon.  
-- Dans notre cas, nous avons eu des difficultés a détecter les valeurs de résistance des crayons du type H. Leur résistance est trop grande, pour mieux les détecter il faudrait mettre des résistances en parrallèle. 
+## 8. Pistes des améliorations possibles
+- Le capteur se détériore trop rapidement et on observe une faible reproductibilité des expériences, il est rare de retrouver les même valeurs de résistance pour un même crayon. Chaque capteur est unique même en utilisant un même type de crayon. En effet, tout dépend de la quantité de graphite que l'on dépose sur le capteur.  
+- Difficultés à détecter les valeurs de résistance des crayons du type H. Leur résistance est trop grande, pour mieux les détecter il faudrait mettre des résistances en parrallèle. 
