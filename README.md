@@ -1,12 +1,12 @@
 # 2020_2021_DERGICI_LOISON
 
 
-# Plan du Projet Capteur
-
+## Plan du Projet Capteur
 
   - [1. Description](#1-description)
   - [2. Liste des livrables](#2-liste-des-livrables)
   - [3. KiCAD PCB shield - Livrable 1](#3-kicad-pcb-shield---livrable-1)
+    - [3.1 Présentation des symboles KiCAD créés](#31-présentation-des-symboles-kicad-créés)
   - [4. Code Arduino - Livrable 2](#4-code-arduino---livrable-2)
   - [5. APK Android interface - Livrable 3](#5-apk-android-interface---livrable-3)
     - [5.1 Notre application: Capteur_Graphite_SDML](#51-notre-application-capteur_graphite_sdml)
@@ -27,6 +27,7 @@ Le projet comprend:
  - la communication via un microcontrôleur avec une application Android. 
 
 
+
 ## 2. Liste des livrables
 
 - [x] KiCAD PCB shield: transimpedance amplifier, BT module, OLED screen
@@ -36,9 +37,21 @@ Le projet comprend:
 - [x] Protocole du banc test
 
 
+
 ## 3. KiCAD PCB shield - Livrable 1
 
-- le PCB simple face 
+- PCB simple face designé sur KiCAD
+- Accès aux fichiers Gerber, et aux pdf des pistes
+- Représentation 3D de la plaquette
+
+## 3.1 Présentation des symboles KiCAD créés
+
+![Symbole du capteur sous KiCAD](Images/Symbole_Capteur_KiCAD.png)
+![Symbole de l'écran OLED sous KiCAD](Images/Symbole_OLED_KiCAD.png)
+![Symbole du module BlueTooth sous KiCAD](Images/Symbole_ModuleBT_KiCAD.png)
+![Symbole de l'ampli LTC1050 sous KiCAD](Images/Symbole_Ampli_KiCAD.png)
+
+
 
 
 ## 4. Code Arduino - Livrable 2
@@ -46,6 +59,7 @@ Le projet comprend:
 - le code Arduino permet la communication avec le téléphone portable (réception et envoi de données sous forme de bit), sur la base d'une machine à états il gère ensuite les différents cas de figure possibles
 - il transforme la valeur en ADC en valeur de résistance, selon l'équation du circuit établie
 - il gère aussi l'affichage des valeurs de résistance sur l'OLED pendant la mesure, et gère l'arrêt de mesure avec l'affichage de l'écran d'accueil sur l'OLED
+
 
 
 ## 5. APK Android interface - Livrable 3
@@ -61,9 +75,18 @@ Le projet comprend:
 
 ### 5.2 Interface de Capteur_Graphite_SDML
 
+![Interface de l'appli](Images/Interface_App_MIT.png)
+
 
 
 ## 6. Datacheet du capteur - Livrable 4
+
+- Description du capteur et de l'application associée,
+- Dimensions du capteur et exemple d'utilisation,
+- Présentation du banc de test,
+- Caractéristiques techniques et électriques,
+- Caractéristiques (Variation de résistance/Déformation).
+
 
 
 ## 7. Protocole du banc de test - Livrable 5
@@ -76,6 +99,7 @@ Le projet comprend:
 - Pour une meilleure durée de vie du capteur il est préférable de commencer par les rayons les plus grands (torsion et risque de casse du capteur moins)
 - À chaque test, les données (la clock, la valeur de la résistance et la valeur de l'ADC) sont enregistrées dans un fichier texte sur le téléphone (nom typique: "myFile_typeCrayon_rayon.txt").
 - Une fois tous les tests effectués selon les différents rayons et selon le type de crayon choisi, les données sont traitées.
+
 
 
 ## 8. Pistes des améliorations possibles
