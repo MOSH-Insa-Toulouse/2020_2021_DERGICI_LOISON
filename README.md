@@ -1,9 +1,20 @@
 # 2020_2021_DERGICI_LOISON
 
 
-## Plan du Projet Capteur
+# Plan du Projet Capteur
 
-<!-- TOC depthFrom:2 -->autoauto- [Plan du Projet Capteur](#plan-du-projet-capteur)auto- [1. Description](#1-description)auto- [2. Liste des livrables](#2-liste-des-livrables)auto- [3. KiCAD PCB shield - Livrable 1](#3-kicad-pcb-shield---livrable-1)auto- [4. Code Arduino - Livrable 2](#4-code-arduino---livrable-2)auto- [5. APK Android interface - Livrable 3](#5-apk-android-interface---livrable-3)auto    - [5.1 Notre application: Capteur_Graphite_SDML](#51-notre-application-capteur_graphite_sdml)auto    - [5.2 Interface de Capteur_Graphite_SDML](#52-interface-de-capteur_graphite_sdml)auto- [6. Datacheet du capteur - Livrable 4](#6-datacheet-du-capteur---livrable-4)auto- [7. Protocole du banc de test - Livrable 5](#7-protocole-du-banc-de-test---livrable-5)auto- [8. Pistes des améliorations possibles](#8-pistes-des-améliorations-possibles)autoauto<!-- /TOC -->
+
+  - [1. Description](#1-description)
+  - [2. Liste des livrables](#2-liste-des-livrables)
+  - [3. KiCAD PCB shield - Livrable 1](#3-kicad-pcb-shield---livrable-1)
+  - [4. Code Arduino - Livrable 2](#4-code-arduino---livrable-2)
+  - [5. APK Android interface - Livrable 3](#5-apk-android-interface---livrable-3)
+    - [5.1 Notre application: Capteur_Graphite_SDML](#51-notre-application-capteur_graphite_sdml)
+    - [5.2 Interface de Capteur_Graphite_SDML](#52-interface-de-capteur_graphite_sdml)
+  - [6. Datacheet du capteur - Livrable 4](#6-datacheet-du-capteur---livrable-4)
+  - [7. Protocole du banc de test - Livrable 5](#7-protocole-du-banc-de-test---livrable-5)
+  - [8. Pistes des améliorations possibles](#8-pistes-des-améliorations-possibles)
+
 
 
 ## 1. Description 
