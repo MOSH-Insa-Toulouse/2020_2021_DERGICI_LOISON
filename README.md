@@ -66,9 +66,9 @@ Le projet comprend:
 
 ## 4. Code Arduino - Livrable 2
 
-- le code Arduino permet la communication avec le téléphone portable (réception et envoi de données sous forme de bit), sur la base d'une machine à états il gère ensuite les différents cas de figure possibles
-- il transforme la valeur en ADC en valeur de résistance, selon l'équation du circuit établie
-- il gère aussi l'affichage des valeurs de résistance sur l'OLED pendant la mesure, et gère l'arrêt de mesure avec l'affichage de l'écran d'accueil sur l'OLED
+- Le code Arduino permet la communication avec le téléphone portable (réception et envoi de données sous forme de bit), sur la base d'une machine à états il gère ensuite les différents cas de figure possibles
+- Il transforme la valeur en ADC en valeur de résistance, selon l'équation du circuit établie
+- Il gère aussi l'affichage des valeurs de résistance sur l'OLED pendant la mesure, et gère l'arrêt de mesure avec l'affichage de l'écran d'accueil sur l'OLED
 
 
 
