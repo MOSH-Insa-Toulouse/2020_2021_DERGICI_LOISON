@@ -50,13 +50,13 @@ Le projet comprend:
 ![Symbole du capteur sous KiCAD](Images/Symbole_Capteur_KiCAD.png)
 
 ### Symbole créé pour l'écran OLED
-![Symbole de l'OLED sous KiCAD](Images/Symbole_OLED_KiCAD.png)
+![Symbole de l'OLED sous KiCAD](Images/KiCAD_OLED.png)
 
 ### Symbole créé pour le module BlueTooth
-![Symbole du module BT sous KiCAD](Images/Symbole_ModuleBT_KiCAD.png)
+![Symbole du module BT sous KiCAD](Images/KiCAD_ModuleBT.png)
 
 ### Symbole créé pour l'ampli LTC1050
-![Symbole de l'ampli LTC1050 sous KiCAD](Images/Symbole_Ampli_KiCAD.png)
+![Symbole de l'ampli LTC1050 sous KiCAD](Images/KiCAD_Ampli.png)
 
 
 
