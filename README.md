@@ -41,9 +41,9 @@ Tous les livrales ont été réalisés et sont disponibles sur la plateforme Git
 
 ## 3. KiCAD PCB shield - Livrable 1
 
-- PCB simple face designé sur KiCAD : 
-       - schematics: création d'une biblihothèque dédiée au projet et de nouveaux symboles pour représenter tous les éléments du shield.
-       - PCB: routage du circuit transimpédance et des éléments permettant la mesure (module BT, OLED), création des empreintes associées à tous les éléments du shield.
+- PCB simple face designé sur KiCAD :
+  - schematics: création d'une biblihothèque dédiée au projet et de nouveaux symboles pour représenter tous les éléments du shield.
+  - PCB: routage du circuit transimpédance et des éléments permettant la mesure (module BT, OLED), création des empreintes associées à tous les éléments du shield.
 - Accès possible sur GitHub aux fichiers Gerber, à la représentation 3D du shield ainsi qu'aux pdf des pistes
 
 
