@@ -36,13 +36,16 @@ Le projet comprend:
 - [x] Datasheet du capteur
 - [x] Protocole du banc test
 
+Tous les livrales ont été réalisés et sont disponibles sur la plateforme GitHub.
 
 
 ## 3. KiCAD PCB shield - Livrable 1
 
-- PCB simple face designé sur KiCAD
-- Accès aux fichiers Gerber, et aux pdf des pistes
-- Représentation 3D de la plaquette
+- PCB simple face designé sur KiCAD : 
+        ° schematics: création d'une biblihothèque dédiée au projet et de nouveaux symboles pour représenter tous les éléments du shield.
+        ° PCB: routage du circuit transimpédance et des éléments permettant la mesure (module BT, OLED), création des empreintes associées à tous les éléments du shield.
+- Accès possible sur GitHub aux fichiers Gerber, à la représentation 3D du shield ainsi qu'aux pdf des pistes
+
 
 ## 3.1 Présentation des symboles KiCAD créés
 
@@ -58,16 +61,20 @@ Le projet comprend:
 ### Symbole créé pour l'ampli LTC1050
 ![Symbole de l'ampli LTC1050 sous KiCAD](Images/KiCAD_Ampli.PNG)
 
-
-
+### Représentation 3D du shield
+![Représentation 3D du shield](Images/KiCAD_3D_Shield.PNG)
 
 
 
 
 ## 4. Code Arduino - Livrable 2
 
-- Le code Arduino permet la communication avec le téléphone portable (réception et envoi de données sous forme de bit), sur la base d'une machine à états il gère ensuite les différents cas de figure possibles
-- Il transforme la valeur en ADC en valeur de résistance, selon l'équation du circuit établie
+- Le code Arduino permet la communication avec le téléphone portable (réception et envoi de données sous forme de bit), sur la base d'une machine à états il gère ensuite les différents cas de figure possibles.
+Trois cas de figures simples ont été imaginés :
+        ° début de mesure et d'acquisition (correspond au case action=1): lance la mesure et la sauvegarde des données d'ADC et de résistance, affichage de la valeur de résistance sur l'OLED et l'application, graphe de l'appli suit l'évolution des variations de résistance.
+        ° fin de mesure et arrêt de l'acquisition (correspond au case action=2) : arrête la mesure et met fin à la sauvegarde des données qui sont dès lors accessibles sur le téléphone.
+        ° default case: gère le cas où action a une valeur anormale (différente de 1 ou 2).
+- Il traduit la valeur en ADC en valeur de résistance, selon l'équation du circuit établie. Pour éviter les erreurs dues à une mauvaise écriture de l'équation (trop ou pas assez de parenthèses) les déterminants, numérateurs et autres ont été préalablement calculés et une variable leur a été affectée.
 - Il gère aussi l'affichage des valeurs de résistance sur l'OLED pendant la mesure, et gère l'arrêt de mesure avec l'affichage de l'écran d'accueil sur l'OLED
 
 
