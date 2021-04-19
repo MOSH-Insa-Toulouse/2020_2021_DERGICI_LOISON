@@ -48,24 +48,24 @@ Tous les livrales ont été réalisés et sont disponibles sur la plateforme Git
 - Accès possible sur GitHub aux fichiers Gerber, à la représentation 3D du shield ainsi qu'aux pdf des pistes
 
 
-## 3.1 Présentation des symboles KiCAD créés
+### 3.1 Présentation des symboles KiCAD créés
 
-### Symbole créé pour le capteur graphite
+#### Symbole créé pour le capteur graphite
 ![Symbole du capteur sous KiCAD](Images/Symbole_Capteur_KiCAD.png)
 
-### Symbole créé pour l'écran OLED
+#### Symbole créé pour l'écran OLED
 ![Symbole de l'OLED sous KiCAD](Images/KiCAD_OLED.PNG)
 
-### Symbole créé pour le module BlueTooth
+#### Symbole créé pour le module BlueTooth
 ![Symbole du module BT sous KiCAD](Images/KiCAD_ModuleBT.PNG)
 
-### Symbole créé pour l'ampli LTC1050
+#### Symbole créé pour l'ampli LTC1050
 ![Symbole de l'ampli LTC1050 sous KiCAD](Images/KiCAD_Ampli.PNG)
 
 
-## 3.2 Rendu 3D du shield designé
+### 3.2 Rendu 3D du shield designé
 
-### Représentation 3D du shield
+#### Représentation 3D du shield
 ![Représentation 3D du shield](Images/KiCAD_3D_Shield.png)
 
 
