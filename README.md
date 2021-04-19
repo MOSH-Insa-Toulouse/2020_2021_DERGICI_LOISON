@@ -7,6 +7,7 @@
   - [2. Liste des livrables](#2-liste-des-livrables)
   - [3. KiCAD PCB shield - Livrable 1](#3-kicad-pcb-shield---livrable-1)
     - [3.1 Présentation des symboles KiCAD créés](#31-présentation-des-symboles-kicad-créés)
+    - [3.2 Rendu 3D du shield designé](#32-rendu-3d-du-shield-designé)
   - [4. Code Arduino - Livrable 2](#4-code-arduino---livrable-2)
   - [5. APK Android interface - Livrable 3](#5-apk-android-interface---livrable-3)
     - [5.1 Notre application: Capteur_Graphite_SDML](#51-notre-application-capteur_graphite_sdml)
@@ -60,6 +61,9 @@ Tous les livrales ont été réalisés et sont disponibles sur la plateforme Git
 
 ### Symbole créé pour l'ampli LTC1050
 ![Symbole de l'ampli LTC1050 sous KiCAD](Images/KiCAD_Ampli.PNG)
+
+
+## 3.2 Rendu 3D du shield designé
 
 ### Représentation 3D du shield
 ![Représentation 3D du shield](Images/KiCAD_3D_Shield.png)
