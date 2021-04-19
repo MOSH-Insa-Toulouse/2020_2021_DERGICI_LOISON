@@ -72,7 +72,7 @@ Tous les livrales ont été réalisés et sont disponibles sur la plateforme Git
 - Le code Arduino permet la communication avec le téléphone portable (réception et envoi de données sous forme de bit), sur la base d'une machine à états il gère ensuite les différents cas de figure possibles.
 Trois cas de figures simples ont été imaginés :
    - début de mesure et d'acquisition (correspond au case action=1): lance la mesure et la sauvegarde des données d'ADC et de résistance, affichage de la valeur de résistance sur l'OLED et l'application, graphe de l'appli suit l'évolution des variations de résistance.
-   - fin de mesure et arrêt de l'acquisition (correspond au case action=2) : arrête la mesure et met fin à la sauvegarde des données qui sont dès lors accessibles sur le téléphone.
+   - fin de mesure et arrêt de l'acquisition (correspond au case action=2): arrête la mesure et met fin à la sauvegarde des données qui sont dès lors accessibles sur le téléphone.
    - default case: gère le cas où action a une valeur anormale (différente de 1 ou 2).
   
 - Il traduit la valeur en ADC en valeur de résistance, selon l'équation du circuit établie. Pour éviter les erreurs dues à une mauvaise écriture de l'équation (trop ou pas assez de parenthèses) les déterminants, numérateurs et autres ont été préalablement calculés et une variable leur a été affectée.
