@@ -127,9 +127,6 @@ Trois cas de figures simples ont été imaginés :
 
 ## 8. Pistes des améliorations possibles
 
-- Ajouter un autoscale sur le graphique de l'application Android
-
-
 - Le capteur se détériore trop rapidement et on observe une faible reproductibilité des expériences: il est rare de retrouver les même valeurs de résistance pour un même type de crayon. En effet, tout dépend du nombre de couches de graphène déposées sur le capteur. Ce dépôt reste donc très aléatoire.
 - Difficultés à mesurer les valeurs de résistance des crayons du type H: leur résistance est trop faible on ne parvient pas à les détecter.
 - Difficultés à mesurer les valeurs de résistances des crayons du type 3B et supérieurs: leur résistance est trop élevée il y a overload.
@@ -143,4 +140,5 @@ Trois cas de figures simples ont été imaginés :
      - Adapter le code Arduino pour permettre l'utilisation de l'encodeur rotatif pour naviguer dans le menu de présélection.
      - Adapter le code Aduino pour mettre au point une phase de calibration de potentiomètre R2 suite au choix du type de crayon.
      - Adapter le code Arduino pour communiquer la nouvelle valeur de R2 à l'application Android et au reste du code Arduino (pour les conversion d'ADC en valeur de résistance).
+     - Ajouter un autoscale sur le graphique de l'application Android.
 
