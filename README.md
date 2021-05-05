@@ -130,6 +130,7 @@ Trois cas de figures simples ont été imaginés :
 - Le capteur se détériore trop rapidement et on observe une faible reproductibilité des expériences: il est rare de retrouver les même valeurs de résistance pour un même type de crayon. En effet, tout dépend du nombre de couches de graphène déposées sur le capteur. Ce dépôt reste donc très aléatoire.
 - Difficultés à mesurer les valeurs de résistance des crayons du type H: leur résistance est trop faible on ne parvient pas à les détecter.
 - Difficultés à mesurer les valeurs de résistances des crayons du type 3B et supérieurs: leur résistance est trop élevée il y a overload.
+     
      **=> Il s'agit d'un problème de calibration:**
      - Pour adapter le capteur à tous les types de crayons et maximiser les chances d'obtenir plus facilement des données fiables il faut jouer sur la valeur de R2 dans le circuit transimpédance de notre shield
      **=> Nous proposons:**
