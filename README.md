@@ -107,7 +107,8 @@ Trois cas de figures simples ont été imaginés :
 - Dimensions du capteur et exemple d'utilisation,
 - Présentation du banc de test,
 - Caractéristiques techniques et électriques,
-- Caractéristiques (Variation de résistance/Déformation).
+- Caractéristiques (Variation de résistance/Déformation),
+- Remarques sur les domaines d'utilisation en déformation.
 
 
 
@@ -126,5 +127,16 @@ Trois cas de figures simples ont été imaginés :
 
 ## 8. Pistes des améliorations possibles
 
-- Le capteur se détériore trop rapidement et on observe une faible reproductibilité des expériences, il est rare de retrouver les même valeurs de résistance pour un même crayon. Chaque capteur est unique même en utilisant un même type de crayon. En effet, tout dépend de la quantité de graphite que l'on dépose sur le capteur.  
-- Difficultés à détecter les valeurs de résistance des crayons du type H. Leur résistance est trop grande, pour mieux les détecter il faudrait mettre des résistances en parallèle. 
+- Le capteur se détériore trop rapidement et on observe une faible reproductibilité des expériences: il est rare de retrouver les même valeurs de résistance pour un même type de crayon. En effet, tout dépend du nombre de couches de graphène déposées sur le capteur. Ce dépôt reste donc très aléatoire.
+- Difficultés à mesurer les valeurs de résistance des crayons du type H: leur résistance est trop faible on ne parvient pas à les détecter.
+- Difficultés à mesurer les valeurs de résistances des crayons du type 3B et supérieurs: leur résistance est trop élevée il y a overload.
+     **=> Il s'agit d'un problème de calibration:**
+     - Pour adapter le capteur à tous les types de crayons et maximiser les chances d'obtenir plus facilement des données fiables il faut jouer sur la valeur de R2 dans le circuit transimpédance de notre shield
+     **=> Nous proposons:**
+     - Remplacer la résistance R2 par un potentiomètre, ce qui permet d'accéder à une plus grande gamme de résistances et donc de modifier le gain. Une meilleure modulation du gain permettra de s'adapter aux aux résistances trop élevées ou faibles.
+     - Installer un encodeur rotatif et mettre au point sur l'Arduino un menu de présélection permettant d'indiquer avant la mesure le type de crayon qui sera utilisé.
+     - Adapter le code Arduino pour permettre l'utilisation de l'encodeur rotatif pour naviguer dans le menu de présélection.
+     - Adapter le code Aduino pour mettre au point une phase de calibration de potentiomètre R2 suite au choix du type de crayon.
+     - Adapter le code Arduino pour communiquer la nouvelle valeur de R2 à l'application Android et au reste du code Arduino (pour les conversion d'ADC en valeur de résistance).
+
+- Ajouter un autoscale sur le graphique de l'application Android
