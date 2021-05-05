@@ -31,7 +31,7 @@ int action = 0;
 oled display(-1);
 
 
-//gestion valeur tension
+//définition des variables nécessaires pour la conversion d'ADC en Résistance
 #define A0 0
 int valeur = 0;
 int R1 = 100000;
@@ -40,7 +40,7 @@ int R2 = 1000;
 int R5 = 10000;
 int Vcc = 5;
 
-//fonction d'intialilsation de l'OLED au démarrage
+//fonction d'intialilsation de l'OLED au démarrage, l'OLED s'allume et affiche le texte "Projet capteur" dans un rectangle
 void demarrage () {
   display.clearDisplay();
   display.setTextSize(1);
@@ -54,6 +54,7 @@ void demarrage () {
 }
 
 
+//fonction setup, définition des pins et de leur mode, initialisation du serial et de son baudrate
 void setup() {
   Serial.begin(9600);
   display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS);
