@@ -133,6 +133,7 @@ Trois cas de figures simples ont été imaginés :
      
      **=> Il s'agit d'un problème de calibration:**
      - Pour adapter le capteur à tous les types de crayons et maximiser les chances d'obtenir plus facilement des données fiables il faut jouer sur la valeur de R2 dans le circuit transimpédance de notre shield
+     
      **=> Nous proposons:**
      - Remplacer la résistance R2 par un potentiomètre, ce qui permet d'accéder à une plus grande gamme de résistances et donc de modifier le gain. Une meilleure modulation du gain permettra de s'adapter aux aux résistances trop élevées ou faibles.
      - Installer un encodeur rotatif et mettre au point sur l'Arduino un menu de présélection permettant d'indiquer avant la mesure le type de crayon qui sera utilisé.
