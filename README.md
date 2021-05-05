@@ -135,10 +135,10 @@ Trois cas de figures simples ont été imaginés :
      - Pour adapter le capteur à tous les types de crayons et maximiser les chances d'obtenir plus facilement des données fiables il faut jouer sur la valeur de R2 dans le circuit transimpédance de notre shield
      
      **=> Nous proposons:**
-     - Remplacer la résistance R2 par un potentiomètre, ce qui permet d'accéder à une plus grande gamme de résistances et donc de modifier le gain. Une meilleure modulation du gain permettra de s'adapter aux aux résistances trop élevées ou faibles.
+     - Remplacer la résistance R2 par un potentiomètre, ce qui permet d'accéder à une plus grande gamme de résistances et donc de modifier le gain. Une meilleure modulation du gain permettra de s'adapter aux résistances trop élevées ou trop faibles.
      - Installer un encodeur rotatif et mettre au point sur l'Arduino un menu de présélection permettant d'indiquer avant la mesure le type de crayon qui sera utilisé.
      - Adapter le code Arduino pour permettre l'utilisation de l'encodeur rotatif pour naviguer dans le menu de présélection.
-     - Adapter le code Aduino pour mettre au point une phase de calibration de potentiomètre R2 suite au choix du type de crayon.
-     - Adapter le code Arduino pour communiquer la nouvelle valeur de R2 à l'application Android et au reste du code Arduino (pour les conversion d'ADC en valeur de résistance).
+     - Adapter le code Aduino pour mettre au point une phase de calibration du potentiomètre R2 suite au choix du type de crayon.
+     - Adapter le code Arduino pour communiquer la nouvelle valeur de R2 à l'application Android et au reste du code Arduino (pour les conversions d'ADC en valeur de résistance).
      - Ajouter un autoscale sur le graphique de l'application Android.
 
