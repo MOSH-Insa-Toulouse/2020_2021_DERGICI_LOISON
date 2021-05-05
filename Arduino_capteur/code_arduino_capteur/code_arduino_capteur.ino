@@ -72,7 +72,7 @@ float lectureValeur () {
   return valeur;
 }
 
-//fonction gérant l'affichage de la valeur sur l'OLED
+//fonction gérant l'affichage de la valeur de résistance sur l'OLED
 void affichage_tension (float valeur) {
   display.clearDisplay();
   display.drawRect (1, 1, 124, 30, WHITE);
@@ -81,11 +81,11 @@ void affichage_tension (float valeur) {
   display.setCursor(30, 6);
   display.print("Valeur R =");
   display.setCursor(32, 15);
-  float R3R2 = 10100000;//valeur numérique du calcul: 
-  float VccVmes = 256; //valeur numérique du calcul:
-  float R1R5 = 110000; //valeur numérique du calcul: 
-  float val_res = ((R3R2 * VccVmes) / (valeur)) - R1R5; //Affichage de la résisitance
-  display.print(val_res /1000000); //Pour obtenir une valeur en MOhm
+  float R3R2 = 10100000;//valeur numérique du calcul: R1[1+(R3/R2)]
+  float VccVmes = 256; //valeur numérique du calcul: [Vcc/(value*4/1024)*Vcc]
+  float R1R5 = 110000; //valeur numérique du calcul: (R1+R5)
+  float val_res = ((R3R2 * VccVmes) / (valeur)) - R1R5; //conversion ADC en Résistance
+  display.print(val_res /1000000); //pour obtenir une valeur en MOhm
   display.println("  MOhm");
   display.display();
 }
